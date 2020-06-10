@@ -4,9 +4,17 @@
         <servlet-name>Recibir</servlet-name>
         <servlet-class>Controladores.Recibir</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>Modificar</servlet-name>
+        <servlet-class>Controladores.Modificar</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>Recibir</servlet-name>
         <url-pattern>/recibir.do</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Modificar</servlet-name>
+        <url-pattern>/modificar.do</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>
