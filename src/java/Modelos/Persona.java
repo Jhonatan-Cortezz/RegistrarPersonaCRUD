@@ -44,7 +44,7 @@ public class Persona extends Conexion{
     }
     
     
-    //contructor bacio
+    //contructor vacio
     public Persona(){
         
     }
