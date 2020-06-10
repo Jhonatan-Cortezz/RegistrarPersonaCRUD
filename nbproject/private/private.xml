@@ -3,11 +3,10 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/Cristian/Documents/GitHub/RegistrarPersonaCRUD/src/java/Modelos/Conexion.java</file>
-            <file>file:/C:/Users/Cristian/Documents/GitHub/RegistrarPersonaCRUD/src/java/Modelos/Persona.java</file>
-            <file>file:/C:/Users/Cristian/Documents/GitHub/RegistrarPersonaCRUD/web/WEB-INF/listarPersona.jsp</file>
-            <file>file:/C:/Users/Cristian/Documents/GitHub/RegistrarPersonaCRUD/web/index.jsp</file>
-            <file>file:/C:/Users/Cristian/Documents/GitHub/RegistrarPersonaCRUD/src/java/Controladores/Mostrar.java</file>
+            <file>file:/C:/Users/JHONATAN%20CORTEZ/Documents/NetBeansProjects/RegistrarPersonaCRUD/src/java/Controladores/Modificar.java</file>
+            <file>file:/C:/Users/JHONATAN%20CORTEZ/Documents/NetBeansProjects/RegistrarPersonaCRUD/web/WEB-INF/web.xml</file>
+            <file>file:/C:/Users/JHONATAN%20CORTEZ/Documents/NetBeansProjects/RegistrarPersonaCRUD/src/java/Controladores/Recibir.java</file>
+            <file>file:/C:/Users/JHONATAN%20CORTEZ/Documents/NetBeansProjects/RegistrarPersonaCRUD/src/java/Controladores/Mostrar.java</file>
         </group>
     </open-files>
 </project-private>

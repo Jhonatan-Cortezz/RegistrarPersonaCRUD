@@ -82,7 +82,7 @@ public class Modificar extends HttpServlet {
        pers.setNombres_persona(nombres_persona);
        
        if(pers.modificarDatos() == true) {
-           request.getRequestDispatcher("exitoUpdate.jsp").forward(request, response);
+           request.getRequestDispatcher("exito.jsp").forward(request, response);
        }
        else {
                request.getRequestDispatcher("noExito.jsp").forward (request, response);

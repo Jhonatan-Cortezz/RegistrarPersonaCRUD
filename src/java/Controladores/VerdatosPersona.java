@@ -5,20 +5,19 @@
  */
 package Controladores;
 
+import Modelos.Persona;
 import java.io.IOException;
 import java.io.PrintWriter;
-import java.util.ArrayList;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import Modelos.Persona;
 
 /**
  *
- * @author Cristian
+ * @author JHONATAN CORTEZ
  */
-public class Mostrar extends HttpServlet {
+public class VerdatosPersona extends HttpServlet {
 
     /**
      * Processes requests for both HTTP <code>GET</code> and <code>POST</code>
@@ -32,13 +31,18 @@ public class Mostrar extends HttpServlet {
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         response.setContentType("text/html;charset=UTF-8");
-        Persona p = new Persona();
-        ArrayList<Persona> listarPersona = new ArrayList<>();
-        listarPersona = p.consultarRegistros();
-        request.getSession().setAttribute("pers", listarPersona);
-        
-        request.getRequestDispatcher("/listarPersona.jsp").forward(request, response);
-        
+        try (PrintWriter out = response.getWriter()) {
+            /* TODO output your page here. You may use following sample code. */
+            out.println("<!DOCTYPE html>");
+            out.println("<html>");
+            out.println("<head>");
+            out.println("<title>Servlet VerdatosPersona</title>");            
+            out.println("</head>");
+            out.println("<body>");
+            out.println("<h1>Servlet VerdatosPersona at " + request.getContextPath() + "</h1>");
+            out.println("</body>");
+            out.println("</html>");
+        }
     }
 
     // <editor-fold defaultstate="collapsed" desc="HttpServlet methods. Click on the + sign on the left to edit the code.">
@@ -53,7 +57,13 @@ public class Mostrar extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        processRequest(request, response);
+        response.setContentType("text/html;charset=UTF-8");
+        String dui_persona = request.getParameter("dui_persona");
+        Persona p = new Persona();
+        p.setDui_persona(dui_persona);
+        Persona persona = new Persona();
+        request.getSession().setAttribute("persona", persona);
+        request.getRequestDispatcher("/editarPersona.jsp").forward(request, response);
     }
 
     /**

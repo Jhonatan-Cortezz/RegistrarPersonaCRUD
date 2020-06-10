@@ -3,9 +3,10 @@
     Created on : 06-10-2020, 08:38:53 AM
     Author     : Cristian
 --%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
-<%@taglib prefix='c' uri="http://java.sun.com/jsp/jstl/core"%>
+
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -31,7 +32,7 @@
 					<td><c:out value="${persona.apellidos_persona}"/></td>
 					<td><c:out value="${persona.nombres_persona}"/></td>
 					<td>
-						<a href="">Editar</a>
+						<a href="verdatosPersona.do?dui_persona=<c:out value="${persona.dui_persona}" />">Editar</a>
 					</td>
 					<td>
 						<a href="">Borrar</a>

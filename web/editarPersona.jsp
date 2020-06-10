@@ -19,7 +19,7 @@
                 <input type="txt" name="txtDui" value="<c:out value="${persona.dui_persona}"/>" <br>
             </h6>
                 Apellidos:&nbsp;<input type="text" name="txtApellidos" value="<c:out value="${persona.apellidos_persona}"/>"><br>
-               Nombres:&nbsp;<input type="text" name="txtNombres" value="<c:out value="${persona.nombres_persona}"/>" 
+                Nombres:&nbsp;<input type="text" name="txtNombres" value="<c:out value="${persona.nombres_persona}"/>"><br>
                <input type="submit" value="ACTUALIZAR DATOS" name="btnEnviar">
         </form>
     </body>
