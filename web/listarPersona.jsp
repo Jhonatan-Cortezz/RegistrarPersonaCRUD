@@ -1,9 +1,8 @@
 <%-- 
     Document   : listarPersona
-    Created on : 06-09-2020, 09:08:46 PM
+    Created on : 06-10-2020, 08:38:53 AM
     Author     : Cristian
 --%>
-
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <%@taglib prefix='c' uri="http://java.sun.com/jsp/jstl/core"%>
