@@ -13,7 +13,7 @@ import java.util.logging.Logger;
  */
 public class Conexion {
     private Connection cnn = null;
-    
+    //no se conecta a la base de datos ahora creo que si XD
     //conectar a la base de datos
     public Connection obtenerConexion(){
         try {

@@ -13,12 +13,12 @@
         <servlet-class>Controladores.Modificar</servlet-class>
     </servlet>
     <servlet>
-        <servlet-name>Borrar</servlet-name>
-        <servlet-class>Controladores.Borrar</servlet-class>
-    </servlet>
-    <servlet>
         <servlet-name>VerdatosPersona</servlet-name>
         <servlet-class>Controladores.VerdatosPersona</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>Borrar</servlet-name>
+        <servlet-class>Controladores.Borrar</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>Recibir</servlet-name>
@@ -33,12 +33,12 @@
         <url-pattern>/modificar.do</url-pattern>
     </servlet-mapping>
     <servlet-mapping>
-        <servlet-name>Borrar</servlet-name>
-        <url-pattern>/borrar.do</url-pattern>
-    </servlet-mapping>
-    <servlet-mapping>
         <servlet-name>VerdatosPersona</servlet-name>
         <url-pattern>/verdatosPersona.do</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Borrar</servlet-name>
+        <url-pattern>/borrar.do</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>

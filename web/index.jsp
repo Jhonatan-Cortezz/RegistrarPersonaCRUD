@@ -15,5 +15,5 @@
         <h1>CRUD JSP</h1>
         <a href="persona.jsp">Nuevo registro +</a>
         <a href="mostrar.do">Mostrar datos</a>
-    </body>
+    </body> 
 </html>

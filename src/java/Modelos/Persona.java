@@ -155,7 +155,7 @@ public class Persona extends Conexion{
     //metodo para borrar registro
     public boolean eliminarDatos(){
         try {
-            String miQuery = "delete from tb_persona where dui_persona ='" + dui_persona + "'";
+            String miQuery = "delete from tb_persona where dui_persona =' " + dui_persona + " ' ";//que hacen esas comillas dobles al final
             int estado = 0;
             state = obtenerConexion().createStatement();
             estado = state.executeUpdate(miQuery);
